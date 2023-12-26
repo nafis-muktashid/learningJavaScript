@@ -5,4 +5,4 @@
 
 
 
-Is following some courses to learn this and this was the codes that I learned. 
+I was following Jonas Schmedtmann and Faisal Zamir's Udemy course videos. These are the codes that I've learned until now.
