@@ -23,19 +23,28 @@ const x = function () {
 
 // document.querySelector('.check').addEventListener('click', x);
 
-const rightNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(".number").textContent = rightNumber;
+let rightNumber = Math.trunc(Math.random() * 20) + 1;
+
 let scr = 20;
 let highScr = 0;
 
 function winWin() {
+  document.querySelector(".number").textContent = rightNumber;
   document.querySelector(".message").textContent = "You won!!!";
-  const Scr = Number(document.querySelector(".score").value);
+
   if (highScr === 0) {
     document.querySelector(".highscore").textContent = scr;
     highScr = scr;
-  } else if (Scr > highScr)
+  } else if (scr > highScr) {
     document.querySelector(".highscore").textContent = scr;
+    highScr = scr;
+  }
+  //
+  //manipulating CSS
+  document.querySelector("body").style.backgroundColor = "#60b347";
+
+  //value with unit
+  document.querySelector(".number").style.width = "30rem";
 }
 
 function lowLow() {
@@ -75,6 +84,16 @@ document.querySelector(".check").addEventListener("click", function () {
   }
   //
   //
+});
+
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".number").style.width = "15rem";
+  rightNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector(".number").textContent = "?";
+  document.querySelector(".message").textContent = "Start guessing again!";
+  scr = 20;
+  document.querySelector(".score").textContent = scr;
 });
 
 
