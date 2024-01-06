@@ -1,8 +1,7 @@
 "use strict";
 
-/*
+
 //Simple example of DOM(document) manipulation
-//
 console.log(document.querySelector('.message').textContent);
 
 //Manipulating a text to something else;
@@ -13,18 +12,17 @@ console.log(document.querySelector('.message').textContent);
 document.querySelector('.number').textContent = 10;
 document.querySelector('.score').textContent = 20;
 document.querySelector('.guess').value = 1;
-*/
 
-//
+
+
 //Event handling example - Button click
 const x = function () {
   console.log(21);
 };
-
 // document.querySelector('.check').addEventListener('click', x);
 
-let rightNumber = Math.trunc(Math.random() * 20) + 1;
 
+let rightNumber = Math.trunc(Math.random() * 20) + 1;
 let scr = 20;
 let highScr = 0;
 
@@ -39,7 +37,7 @@ function winWin() {
     document.querySelector(".highscore").textContent = scr;
     highScr = scr;
   }
-  //
+  
   //manipulating CSS
   document.querySelector("body").style.backgroundColor = "#60b347";
 
