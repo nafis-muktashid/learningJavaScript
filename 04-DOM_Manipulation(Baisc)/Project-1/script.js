@@ -41,7 +41,6 @@ function winWin() {
   
   //manipulating CSS
   document.querySelector("body").style.backgroundColor = "#60b347";
-
   //value with unit
   document.querySelector(".number").style.width = "30rem";
 }
@@ -58,6 +57,9 @@ function highHigh() {
   document.querySelector(".score").textContent = scr;
 }
 
+
+
+//Check Button DOM Manipulation
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   
@@ -84,6 +86,7 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 
 
+
 //Again Button DOM Manipulation
 document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#222";
@@ -95,11 +98,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".score").textContent = scr;
 });
 
-
-
-
-
-//****formatting has not been done and the file is still on updating****
 
 
 
