@@ -22,6 +22,7 @@ const x = function () {
 // document.querySelector('.check').addEventListener('click', x);
 
 
+
 let rightNumber = Math.trunc(Math.random() * 20) + 1;
 let scr = 20;
 let highScr = 0;
@@ -59,10 +60,10 @@ function highHigh() {
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
+  
   //it can be made nested when added an action listener/ event listener
-  //   document.querySelector('.message').textContent = 'You got it!!!';
-  //
-
+  //   document.querySelector('.message').textContent = 'You got it!!!'; 
+  
   if (!guess) {
     document.querySelector(".message").textContent = "No Number entered";
   } else if (guess === rightNumber) {
@@ -79,11 +80,11 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".score").textContent = 0;
       document.querySelector(".message").textContent = "You Loseee!!!!!";
     }
-  }
-  //
-  //
+  }  
 });
 
+
+//Again Button DOM Manipulation
 document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector(".number").style.width = "15rem";
