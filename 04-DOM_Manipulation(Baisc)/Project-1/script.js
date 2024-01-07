@@ -64,7 +64,7 @@ document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   
   //it can be made nested when added an action listener/ event listener
-  //   document.querySelector('.message').textContent = 'You got it!!!'; 
+    document.querySelector('.message').textContent = 'You got it!!!'; 
   
   if (!guess) {
     document.querySelector(".message").textContent = "No Number entered";
