@@ -19,7 +19,7 @@ document.querySelector('.guess').value = 1;
 const x = function () {
   console.log(21);
 };
-// document.querySelector('.check').addEventListener('click', x);
+document.querySelector('.check').addEventListener('click', x);
 
 
 
@@ -45,18 +45,11 @@ function winWin() {
   document.querySelector(".number").style.width = "30rem";
 }
 
-function lowLow() {
-  document.querySelector(".message").textContent = "Number is low";
+
+function notWinScr(){
   --scr;
   document.querySelector(".score").textContent = scr;
 }
-
-function highHigh() {
-  document.querySelector(".message").textContent = "Number is high";
-  --scr;
-  document.querySelector(".score").textContent = scr;
-}
-
 
 
 //Check Button DOM Manipulation
@@ -70,20 +63,18 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "No Number entered";
   } else if (guess === rightNumber) {
     winWin();
-  } else if (guess > rightNumber) {
-    if (scr > 1) highHigh();
+  } else if (guess !== rightNumber) {
+    if (scr > 1 && guess > rightNumber){
+      document.querySelector(".message").textContent = "Number is high!!";
+      notWinScr();
+    } else if((scr > 1) && (guess < rightNumber)){
+      document.querySelector(".message").textContent = "Number is low!!";
+    }
     else {
       document.querySelector(".score").textContent = 0;
       document.querySelector(".message").textContent = "You Loseee!!!!!";
     }
-  } else if (guess < rightNumber) {
-    if (scr > 1) lowLow();
-    else {
-      document.querySelector(".score").textContent = 0;
-      document.querySelector(".message").textContent = "You Loseee!!!!!";
-    }
-  }  
-});
+  }
 
 
 
