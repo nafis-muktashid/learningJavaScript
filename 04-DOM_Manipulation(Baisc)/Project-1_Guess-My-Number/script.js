@@ -89,11 +89,3 @@ document.querySelector(".again").addEventListener("click", function () {
   scr = 20;
   document.querySelector(".score").textContent = scr;
 });
-
-
-
-
-
-//*****Formatting are still on-going. Code should be refactor at some lines to avoid dulicating and maintaining DRY coding method*****//
-
-
