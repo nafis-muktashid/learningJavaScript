@@ -69,7 +69,7 @@ document.querySelector(".check").addEventListener("click", function () {
       notWinScr();
     } else if((scr > 1) && (guess < rightNumber)){
       document.querySelector(".message").textContent = "Number is low!!";
-			notWinScr();
+      notWinScr();
     }
     else {
       document.querySelector(".score").textContent = 0;
