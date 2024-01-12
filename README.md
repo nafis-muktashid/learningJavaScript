@@ -21,4 +21,6 @@ The art 3,
 The part 4,
     Contains simple DOM Manipulation with three small projects. 
 *****
-
+The part 5,
+    is all about how JS works behind the scene.
+*****
