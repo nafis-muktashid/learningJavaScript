@@ -7,7 +7,7 @@ let rollScore = 0;
 let playerActive = 0;
 let currPlayer = 0;
 let playing = true;
-//
+
 
 //Selection-Variables
 const p1Select = document.querySelector(".player--0");
@@ -20,7 +20,7 @@ const diceSelect = document.querySelector(".dice");
 const newBtnSelect = document.querySelector(".btn--new");
 const rollBtnSelect = document.querySelector(".btn--roll");
 const holdBtnSelect = document.querySelector(".btn--hold");
-//
+
 
 //Switch Player Function
 const switchPlayer = function () {
@@ -30,7 +30,7 @@ const switchPlayer = function () {
   p1Select.classList.toggle("player--active");
   p2Select.classList.toggle("player--active");
 };
-//
+
 
 //New Game Function
 const newGameFunc = function () {
@@ -51,9 +51,9 @@ const newGameFunc = function () {
   currPlayer = 0;
 };
 newBtnSelect.addEventListener("click", newGameFunc);
-//
 
-//
+
+
 //Roll Dice Function
 const rollDiceFunc = function () {
   if (playing) {
@@ -74,7 +74,8 @@ const rollDiceFunc = function () {
   }
 };
 rollBtnSelect.addEventListener("click", rollDiceFunc);
-//
+
+
 
 //Hold dice Function
 const holdDiceFunc = function () {
