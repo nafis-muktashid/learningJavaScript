@@ -4,14 +4,11 @@
 const score = [0, 0];
 let currScore = 0;
 let rollScore = 0;
-let playerActive = 0;
 let currPlayer = 0;
 let playing = true;
 
 
 //Selection-Variables
-const p1Select = document.querySelector(".player--0");
-const p2Select = document.querySelector(".player--1");
 const p1ScoreSelect = document.querySelector("#score--0");
 const p2ScoreSelcet = document.querySelector("#score--1");
 const p1CurScrSelect = document.getElementById("current--0");
@@ -57,10 +54,6 @@ newBtnSelect.addEventListener("click", newGameFunc);
 //Roll Dice Function
 const rollDiceFunc = function () {
   if (playing) {
-    //1. Generate Random dice roll
-    //2. display dice
-    //3. Check if rolled 1 ? switch: stay the same;
-    //
     rollScore = Math.trunc(Math.random() * 6) + 1;
     diceSelect.classList.remove("hidden");
     diceSelect.src = `dice-${rollScore}.png`;
@@ -98,11 +91,5 @@ const holdDiceFunc = function () {
   }
 };
 holdBtnSelect.addEventListener("click", holdDiceFunc);
-
-
-
-
-
-//*****Formatting needed to be done*****
 
 
