@@ -14,6 +14,7 @@ Paradigm - An approach and mindset of structuring code, which will direct your
     2. Object-oriented programming (OOP)
     3. Functional programming (FR)
 
+Every scope always has access to all the variables from all its outer scopes. This is the scope chain
 Scope Chain - : Space or environment in which a certain variable is declared 
     (variable environment in case of functions). 
     
