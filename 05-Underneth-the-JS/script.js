@@ -41,7 +41,7 @@ function calcAge(birthYear) {
       const str = `Oh, you are a millenial too`;
       console.log(str);
     }
-    // console.log(str);    Won't work. cause "str" is child function scoped variable of funtion printAge.
+    // console.log(str);    Won't work. cause "str" is child function scoped variable of funtion printAge. If it was declared as "var" then it would have work.
   }
   printAge();
 
