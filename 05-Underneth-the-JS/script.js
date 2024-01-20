@@ -24,6 +24,33 @@ Scope Chain - : Space or environment in which a certain variable is declared
     3. Block scope. 
 
     var - Function scoped; const, let - block scoped
-
     
 */
+
+
+function calcAge(birthYear) {
+  const age = 2030 - birthYear;
+
+  //   console.log(firstName);
+
+  function printAge() {
+    const output = `${firstName}, You are ${age}, born in ${birthYear}`;
+    console.log(output);
+
+    if (birthYear >= 1981 && birthYear <= 1995) {
+      const str = `Oh, you are a millenial too`;
+      console.log(str);
+    }
+    // console.log(str);    Won't work. cause "str" is child function scoped variable of funtion printAge.
+  }
+  printAge();
+
+  return age;
+}
+
+const firstName = "Nafis";
+calcAge(1991);
+
+// console.log(age);   //Won't work. Cause it is in a child function scope.
+// printAge();         //Similar reason for this too
+
