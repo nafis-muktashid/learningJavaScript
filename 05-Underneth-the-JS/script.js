@@ -14,5 +14,15 @@ Paradigm - An approach and mindset of structuring code, which will direct your
     2. Object-oriented programming (OOP)
     3. Functional programming (FR)
 
+Scope Chain - : Space or environment in which a certain variable is declared 
+    (variable environment in case of functions). 
+    
+    There are 3-types of scopes: ;
+    1. Global scope,
+    2. Function scope, and
+    3. Block scope. 
 
+    var - Function scoped; const, let - block scoped
+
+    
 */
