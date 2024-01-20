@@ -34,14 +34,27 @@ function calcAge(birthYear) {
   //   console.log(firstName);
 
   function printAge() {
-    const output = `${firstName}, You are ${age}, born in ${birthYear}`;
+    let output = `${firstName}, You are ${age}, born in ${birthYear}`;
     console.log(output);
 
     if (birthYear >= 1981 && birthYear <= 1995) {
-      const str = `Oh, you are a millenial too`;
+      //Creating new variable for this block
+      const firstName = "Arpon";
+      var millenial = true;
+      const str = `Oh, you are a millenial too ${firstName}`;
       console.log(str);
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      //Reasinging the parent scoped variable.
+      output = "NEW STRING";
     }
-    // console.log(str);    Won't work. cause "str" is child function scoped variable of funtion printAge. If it was declared as "var" then it would have work.
+    // console.log(str);        Won't work. cause "str" is child function scoped variable of funtion printAge. If it was declared as "var" then it would have work.
+    console.log(millenial); //Like this works.
+    // console.log(add(2, 3));  Won't work. Case in "strict mode" function is block scoped.
+    console.log(output);
   }
   printAge();
 
@@ -53,4 +66,3 @@ calcAge(1991);
 
 // console.log(age);   //Won't work. Cause it is in a child function scope.
 // printAge();         //Similar reason for this too
-
