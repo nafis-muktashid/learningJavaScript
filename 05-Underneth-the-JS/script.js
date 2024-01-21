@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 JavaScript - JavaSctipt is a high-level, garbage-collected, Interpreted or just-in-time compiled, 
@@ -31,7 +31,7 @@ Scope Chain - : Space or environment in which a certain variable is declared
 function calcAge(birthYear) {
   const age = 2030 - birthYear;
 
-  //   console.log(firstName);
+  console.log(firstName);    //Will work because the firstName is the global scope
 
   function printAge() {
     let output = `${firstName}, You are ${age}, born in ${birthYear}`;
@@ -51,9 +51,9 @@ function calcAge(birthYear) {
       //Reasinging the parent scoped variable.
       output = "NEW STRING";
     }
-    // console.log(str);        Won't work. cause "str" is child function scoped variable of funtion printAge. If it was declared as "var" then it would have work.
+    console.log(str);        //Won't work. cause "str" is child function scoped variable of funtion printAge. If it was declared as "var" then it would have work.
     console.log(millenial); //Like this works.
-    // console.log(add(2, 3));  Won't work. Case in "strict mode" function is block scoped.
+    console.log(add(2, 3));  //Won't work. Case in "strict mode" function is block scoped.
     console.log(output);
   }
   printAge();
@@ -64,8 +64,10 @@ function calcAge(birthYear) {
 const firstName = "Nafis";
 calcAge(1991);
 
-// console.log(age);   //Won't work. Cause it is in a child function scope.
-// printAge();         //Similar reason for this too
+console.log(age);   //Won't work. Cause it is in a child function scope.
+printAge();         //Similar reason for this too
+
+
 
 
 
@@ -74,8 +76,8 @@ calcAge(1991);
 // Hoisting and TDZ in Practice
 // Variables
 console.log(me);
-// console.log(job);
-// console.log(year);
+console.log(job);    //Won't work cause :- Let and Const stays in Temporal Dead Zone and won't work before initializing and declaring.
+console.log(year);   //Won't work cause :- Let and Const stays in Temporal Dead Zone and won't work before initializing and declaring.
 
 var me = "Jonas";
 let job = "teacher";
