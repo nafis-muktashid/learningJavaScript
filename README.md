@@ -8,7 +8,7 @@
 I was following Jonas Schmedtmann's Udemy course videos. These are the codes that I've learned until now.
 
 
-Most of the HTML and CSS files are taken from that course. only JavaScript files are developed by myself and copied for study purpose.
+Most of the HTML and CSS files are taken from that course. only JavaScript files are written by myself or copied for study purpose.
 
 
 *****
