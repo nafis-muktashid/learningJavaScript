@@ -15,7 +15,7 @@ Most of the HTML and CSS files are taken from that course. Only JavaScript files
 With the part 2, 
     JavaScript Fundamentals comes to an end. The following folders, along with their contents will be a bit something more than fundamentals. 
 *****
-The art 3,
+The part 3,
     is about some important developer skills that one good developer must have.
 *****
 The part 4,
